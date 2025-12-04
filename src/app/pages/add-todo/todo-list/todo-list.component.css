@@ -1,0 +1,100 @@
+/* Container */
+.todo-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+/* Todo Card List */
+.todo-card {
+  background: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s ease;
+  border-left: 5px solid #007bff;
+}
+
+.todo-card:hover {
+  background: #eef3ff;
+  transform: scale(1.02);
+}
+
+/* Todo Info */
+.todo-info {
+  flex: 1;
+}
+
+.todo-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+.todo-status {
+  font-size: 14px;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+/* Status Colors */
+.status-pending {
+  background: #ffeeba;
+  color: #b37c00;
+}
+
+.status-in-progress {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status-completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+/* Buttons */
+.action-buttons button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b21f2d;
+}
