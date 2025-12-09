@@ -1,107 +1,102 @@
-/* ----------------- TODO LIST CONTAINER ----------------- */
+/* ===== PAGE WRAPPER ===== */
 .todo-container {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 850px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* ----------------- TODO CARD ----------------- */
-.todo-card {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 18px 22px;
-  margin-bottom: 18px;
+/* ===== PAGE TITLE ===== */
+.todo-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #a81010;
+  margin-bottom: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ===== EACH TODO ROW ===== */
+.todo-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s ease-in-out, box-shadow 0.25s;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 18px 20px;
+  margin: 12px 0;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
-.todo-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.20);
+/* ===== TITLE & STATUS ===== */
+.todo-left {
+  display: flex;
+  flex-direction: column;
 }
 
-/* ----------------- TODO TEXT ----------------- */
-.todo-text {
-  flex-grow: 1;
-  font-size: 18px;
-  font-weight: 600;
-  color: #4c1d95;
+.todo-title-text {
+  font-weight: 700;
+  color: #222;
 }
 
-/* ----------------- BUTTON GROUP ----------------- */
+.todo-status {
+  margin-top: 3px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== BUTTON GROUP ===== */
 .todo-actions {
   display: flex;
   gap: 12px;
 }
 
-/* Shared button style */
-.todo-btn {
-  padding: 10px 18px;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-  transition: 0.25s ease-in-out;
-}
-
-/* ---------------- BUTTON COLORS ---------------- */
+/* ----- EDIT BUTTON ----- */
 .btn-edit {
-  background: #6d28d9;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4b57ff;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 .btn-edit:hover {
-  background: #5b21b6;
-  transform: scale(1.07);
-  box-shadow: 0px 6px 15px rgba(109, 40, 217, 0.5);
+  background: #3443d9;
+  transform: translateY(-2px);
 }
 
+/* ----- DELETE BUTTON ----- */
 .btn-delete {
-  background: #ef4444;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #ff4d67;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 .btn-delete:hover {
-  background: #dc2626;
-  transform: scale(1.07);
-  box-shadow: 0px 6px 15px rgba(220, 38, 38, 0.4);
+  background: #cc394e;
+  transform: translateY(-2px);
 }
 
-.btn-status {
-  background: #a78bfa;
-  color: white;
-}
-
-.btn-status:hover {
-  background: #8b5cf6;
-  transform: scale(1.07);
-  box-shadow: 0px 6px 15px rgba(139, 92, 246, 0.4);
-}
-
-/* ---------------- STATUS BADGE ---------------- */
-.status-badge {
-  padding: 6px 14px;
-  border-radius: 10px;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-.status-pending {
-  background: #ffe4e6;
-  color: #be123c;
-}
-
-.status-inprogress {
-  background: #ede9fe;
-  color: #5b21b6;
-}
-
-.status-completed {
-  background: #ecfdf5;
-  color: #047857;
+/* ===== EMPTY MESSAGE ===== */
+.no-todos {
+  text-align: center;
+  font-size: 18px;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.45);
+  color: #444;
 }

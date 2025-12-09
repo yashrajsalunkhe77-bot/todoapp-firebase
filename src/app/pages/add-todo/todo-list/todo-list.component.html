@@ -11,8 +11,8 @@
         <strong>{{ todo.title }}</strong> - {{ todo.status }}
 
         <!-- 🔥 NOTE: todo.id! to force it to string -->
-        <button type="button" (click)="edit(todo.id!)">Edit</button>
-        <button type="button" (click)="delete(todo.id!)">Delete</button>
+        <button type="button" (click)="edit(todo.id!)" style="font-family: 'Courier New', Courier, monospace;">Edit</button>
+        <button type="button" (click)="delete(todo.id!)" style="font-family: 'Courier New', Courier, monospace;">Delete</button>
       </li>
     </ul>
   </div>
