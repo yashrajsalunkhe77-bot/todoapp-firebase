@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 /* ---------------------------------------------------------
    GLOBAL STYLING – Background + Typography
 --------------------------------------------------------- */
+=======
+>>>>>>> e63efdedeb7c5c2ab0c44470c0d5707c66e34099
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #7b2ff7, #f107a3);
   min-height: 100vh;
   color: #ffffff;
@@ -179,3 +183,8 @@ button:hover {
 .nav-bar a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+=======
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+}
+>>>>>>> e63efdedeb7c5c2ab0c44470c0d5707c66e34099

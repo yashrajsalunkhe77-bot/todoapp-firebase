@@ -1,8 +1,67 @@
+<<<<<<< HEAD
 .action-buttons {
+=======
+/* ===== PAGE WRAPPER ===== */
+.todo-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 50px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== PAGE TITLE ===== */
+.todo-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #a81010;
+  margin-bottom: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* ===== EACH TODO ROW ===== */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 18px 20px;
+  margin: 12px 0;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== TITLE & STATUS ===== */
+.todo-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-title-text {
+  font-weight: 700;
+  color: #222;
+}
+
+.todo-status {
+  margin-top: 3px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== BUTTON GROUP ===== */
+.todo-actions {
+>>>>>>> e63efdedeb7c5c2ab0c44470c0d5707c66e34099
   display: flex;
   gap: 12px;
 }
 
+<<<<<<< HEAD
 /* Edit button */
 .btn-edit {
   background: #3b82f6;
@@ -24,10 +83,32 @@
 }
 
 /* Delete button */
-.btn-delete {
-  background: #ef4444;
+=======
+/* ----- EDIT BUTTON ----- */
+.btn-edit {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4b57ff;
   color: white;
   border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-edit:hover {
+  background: #3443d9;
+  transform: translateY(-2px);
+}
+
+/* ----- DELETE BUTTON ----- */
+>>>>>>> e63efdedeb7c5c2ab0c44470c0d5707c66e34099
+.btn-delete {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #ff4d67;
+  color: white;
+  border: none;
+<<<<<<< HEAD
   padding: 6px 14px;
   border-radius: 8px;
   cursor: pointer;
@@ -41,4 +122,25 @@
 .btn-delete:hover {
   background: #b91c1c;
   transform: translateY(-2px);
+=======
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-delete:hover {
+  background: #cc394e;
+  transform: translateY(-2px);
+}
+
+/* ===== EMPTY MESSAGE ===== */
+.no-todos {
+  text-align: center;
+  font-size: 18px;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.45);
+  color: #444;
+>>>>>>> e63efdedeb7c5c2ab0c44470c0d5707c66e34099
 }

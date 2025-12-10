@@ -1,0 +1,143 @@
+<<<<<<< HEAD
+=======
+/* -----------------------------------------------------
+   🔥 PROFESSIONAL BACKGROUND (Purple → Blue Gradient)
+------------------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6D28D9, #2563EB);
+
+
+  min-height: 100vh;
+}
+
+/* -----------------------------------------------------
+   🔥 APP CONTAINER (Glass Card)
+------------------------------------------------------*/
+.app-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 10px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* -----------------------------------------------------
+   🔥 TITLES
+------------------------------------------------------*/
+.app-title {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+
+/* Add emoji */
+.app-title::before {
+  content: "📝 ";
+}
+
+/* Subheadings (Todo List, Add Todo) */
+.todo-title {
+  text-align: center;
+  font-size: 30px;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Emoji */
+.todo-title::before {
+  content: "📌 ";
+}
+
+/* -----------------------------------------------------
+   🔥 NAVBAR (Todo List / Add Todo)
+------------------------------------------------------*/
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 20px 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.nav-bar a:hover {
+  background: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+.nav-bar a.active {
+  background: rgba(255, 255, 255, 0.6);
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* -----------------------------------------------------
+   🔥 TODO ITEMS
+------------------------------------------------------*/
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.todo-left {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Status text */
+.todo-status {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* -----------------------------------------------------
+   🔥 BUTTONS WITH EMOJIS
+------------------------------------------------------*/
+.btn-edit {
+  background: #3b82f6;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-edit::before {
+  content: "✏️ ";
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-delete::before {
+  content: "🗑️ ";
+}
+>>>>>>> e63efdedeb7c5c2ab0c44470c0d5707c66e34099
