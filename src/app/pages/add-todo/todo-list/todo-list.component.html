@@ -1,5 +1,7 @@
 <div class="todo-container">
-  <h2 class="section-title">Todo List</h2>
+  <h1 class="todo-title">Todo List</h1>
+
+  
 
   <div *ngIf="todos$ | async as todos">
     <div *ngIf="todos.length === 0">
@@ -11,9 +13,13 @@
         <strong>{{ todo.title }}</strong> - {{ todo.status }}
 
         <!-- 🔥 NOTE: todo.id! to force it to string -->
-        <button type="button" (click)="edit(todo.id!)">Edit</button>
-        <button type="button" (click)="delete(todo.id!)">Delete</button>
+           <div class="action-buttons">
+    <button class="btn-edit" (click)="edit(todo.id!)"> ✏️ Edit</button>
+    <button class="btn-delete" (click)="delete(todo.id!)">🗑️ Delete</button>
+  </div>
+
       </li>
     </ul>
   </div>
 </div>
+

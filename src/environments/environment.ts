@@ -1,11 +1,11 @@
 export const environment = {
   firebase: {
-    apiKey: "AIzaSyDwV7Xvk7I40kijaprzdTSzFwVrr5Zr0mU",
-    authDomain: "todoapp-5b9ea.firebaseapp.com",
-    projectId: "todoapp-5b9ea",
-    storageBucket: "todoapp-5b9ea.appspot.com",
-    messagingSenderId: "465663092402",
-    appId: "1:465663092402:web:e98c722ad66329fc0bcbab",
-    measurementId: "G-E78158RKBQ"
+    apiKey: "AIzaSyCeXHxvMXTX4gkbO7SxPnemi5JtKG-Hy6U",
+  authDomain: "todoapp-firebase-48cf5.firebaseapp.com",
+  projectId: "todoapp-firebase-48cf5",
+  storageBucket: "todoapp-firebase-48cf5.firebasestorage.app",
+  messagingSenderId: "770753285390",
+  appId: "1:770753285390:web:6a2db6bee7cb795f481b5f"
   }
 };
+

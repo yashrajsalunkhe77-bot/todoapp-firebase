@@ -1,24 +1,20 @@
 <div class="app-wrapper">
+
+  <!-- Routed Page Appears Here -->
+  <router-outlet></router-outlet>
+
+  <!-- App Title -->
   <h1 class="app-title">Todo App</h1>
 
-  <nav>
-    <a
-      routerLink="/"
-      routerLinkActive="active-link"
-      [routerLinkActiveOptions]="{ exact: true }"
-      class="nav-link"
-    >
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
       Todo List
     </a>
 
-    <a
-      routerLink="/add"
-      routerLinkActive="active-link"
-      class="nav-link"
-    >
+    <a routerLink="/add" routerLinkActive="active">
       Add Todo
     </a>
   </nav>
 
-  <router-outlet></router-outlet>
 </div>
